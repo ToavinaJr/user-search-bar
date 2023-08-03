@@ -1,0 +1,135 @@
+*{
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      text-decoration: none;
+}
+
+body{
+      background: #f3f3fa;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background: #0396e3;
+}
+
+.card.hide{
+      display: none;
+}
+
+input{
+      background: #025886;
+      color: #f9c947;
+      text-align: center;
+      width: 98%;
+      padding: 10px;
+      position: sticky;
+      top: 0;
+      left: 0;
+      z-index: 3;
+}
+
+.card{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      border-radius: 10px;
+      margin: 10px;
+}
+
+.left{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: #f9c947;
+      padding: 20px;
+      border-radius: 10px 0 0 10px;
+}
+
+.left img{
+      border-radius: 50%;
+      margin-bottom: 30px;
+}
+
+.left .name{
+      background: #ffe7a7;
+      padding: 10px;
+      border-radius: 5px;
+      color: #0396e3;
+      font-weight: bolder;
+      font-size: 18px;
+}
+
+.right{
+      display: flex;
+      flex-direction: column;
+      background: #070401;
+      color: #202124;
+      width: 500px;
+      padding: 20px 40px;
+      border-radius: 0 10px 10px 0;
+}
+
+.right-container{
+      display: flex;
+}
+
+.right .title{
+      width: 25%;
+      font-weight: bold;
+      color: #ffffff;
+}
+
+.right-container div{
+      margin-bottom: 10px;
+}
+
+.right-container .response{
+      color: #9aa0a6;
+}
+
+.right-container .double-dot{
+      margin-right: 20px;
+      color: #ffffff;
+}
+
+.response a{
+      color: #ffffff;
+}
+
+@media only screen and (max-width: 785px) {
+      .card{
+            flex-direction: column;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+      }
+
+      .left{
+            border-radius: 10px 10px 0 0;
+            width: 96%;
+      }
+
+      .right{
+            border-radius: 0 0 10px 10px;
+            width: 96%;
+            position: relative;
+      }
+
+      .right img{
+            width: 40px;
+            height: 40px;
+            position: absolute;
+            right: 60px;
+            left: 60px;
+      }
+
+      .title {
+            width: 150px;
+      }
+      
+      .title, .response{
+            font-size: 12px;
+      }
+}
